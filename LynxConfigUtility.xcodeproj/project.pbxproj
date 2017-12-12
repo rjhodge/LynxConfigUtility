@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35C3E6D11FE08A4500EE4474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3E6D01FE08A4500EE4474 /* AppDelegate.swift */; };
+		35B61BBE1FE0915B00870CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B61BBD1FE0915B00870CF6 /* Assets.xcassets */; };
+		35B61BC11FE0916600870CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B61BC01FE0916500870CF6 /* Main.storyboard */; };
+		35B61BC71FE091C800870CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B61BC41FE091C800870CF6 /* AppDelegate.swift */; };
+		35B61BC81FE091C800870CF6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35B61BC61FE091C800870CF6 /* Info.plist */; };
 		35C3E6D31FE08A4500EE4474 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3E6D21FE08A4500EE4474 /* ViewController.swift */; };
-		35C3E6D51FE08A4500EE4474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C3E6D41FE08A4500EE4474 /* Assets.xcassets */; };
-		35C3E6D81FE08A4500EE4474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C3E6D61FE08A4500EE4474 /* Main.storyboard */; };
 		35C3E6E41FE08A4500EE4474 /* LynxConfigUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3E6E31FE08A4500EE4474 /* LynxConfigUtilityTests.swift */; };
 		35C3E6EF1FE08A4600EE4474 /* LynxConfigUtilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3E6EE1FE08A4600EE4474 /* LynxConfigUtilityUITests.swift */; };
 /* End PBXBuildFile section */
@@ -33,13 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35B61BBD1FE0915B00870CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35B61BC01FE0916500870CF6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		35B61BC41FE091C800870CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35B61BC51FE091C800870CF6 /* LynxConfigUtility.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = LynxConfigUtility.entitlements; sourceTree = "<group>"; };
+		35B61BC61FE091C800870CF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35C3E6CD1FE08A4500EE4474 /* LynxConfigUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LynxConfigUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35C3E6D01FE08A4500EE4474 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35C3E6D21FE08A4500EE4474 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		35C3E6D41FE08A4500EE4474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		35C3E6D71FE08A4500EE4474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		35C3E6D91FE08A4500EE4474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35C3E6DA1FE08A4500EE4474 /* LynxConfigUtility.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LynxConfigUtility.entitlements; sourceTree = "<group>"; };
 		35C3E6DF1FE08A4500EE4474 /* LynxConfigUtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynxConfigUtilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C3E6E31FE08A4500EE4474 /* LynxConfigUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynxConfigUtilityTests.swift; sourceTree = "<group>"; };
 		35C3E6E51FE08A4600EE4474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +74,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B61BBC1FE0915B00870CF6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				35B61BBD1FE0915B00870CF6 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		35B61BBF1FE0916500870CF6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				35B61BC01FE0916500870CF6 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		35B61BC31FE091C800870CF6 /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				35B61BC41FE091C800870CF6 /* AppDelegate.swift */,
+				35B61BC51FE091C800870CF6 /* LynxConfigUtility.entitlements */,
+				35B61BC61FE091C800870CF6 /* Info.plist */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
 		35C3E6C41FE08A4500EE4474 = {
 			isa = PBXGroup;
 			children = (
@@ -96,12 +123,10 @@
 		35C3E6CF1FE08A4500EE4474 /* LynxConfigUtility */ = {
 			isa = PBXGroup;
 			children = (
-				35C3E6D01FE08A4500EE4474 /* AppDelegate.swift */,
+				35B61BBC1FE0915B00870CF6 /* Assets */,
+				35B61BBF1FE0916500870CF6 /* Storyboards */,
+				35B61BC31FE091C800870CF6 /* AppInfo */,
 				35C3E6D21FE08A4500EE4474 /* ViewController.swift */,
-				35C3E6D41FE08A4500EE4474 /* Assets.xcassets */,
-				35C3E6D61FE08A4500EE4474 /* Main.storyboard */,
-				35C3E6D91FE08A4500EE4474 /* Info.plist */,
-				35C3E6DA1FE08A4500EE4474 /* LynxConfigUtility.entitlements */,
 			);
 			path = LynxConfigUtility;
 			sourceTree = "<group>";
@@ -231,8 +256,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35C3E6D51FE08A4500EE4474 /* Assets.xcassets in Resources */,
-				35C3E6D81FE08A4500EE4474 /* Main.storyboard in Resources */,
+				35B61BBE1FE0915B00870CF6 /* Assets.xcassets in Resources */,
+				35B61BC11FE0916600870CF6 /* Main.storyboard in Resources */,
+				35B61BC81FE091C800870CF6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B61BC71FE091C800870CF6 /* AppDelegate.swift in Sources */,
 				35C3E6D31FE08A4500EE4474 /* ViewController.swift in Sources */,
-				35C3E6D11FE08A4500EE4474 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,17 +318,6 @@
 			targetProxy = 35C3E6EB1FE08A4600EE4474 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		35C3E6D61FE08A4500EE4474 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35C3E6D71FE08A4500EE4474 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		35C3E6F11FE08A4600EE4474 /* Debug */ = {
@@ -418,7 +433,7 @@
 				CODE_SIGN_ENTITLEMENTS = LynxConfigUtility/LynxConfigUtility.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LynxConfigUtility/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LynxConfigUtility/AppInfo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +448,7 @@
 				CODE_SIGN_ENTITLEMENTS = LynxConfigUtility/LynxConfigUtility.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LynxConfigUtility/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LynxConfigUtility/AppInfo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
