@@ -12,26 +12,7 @@
 		35B61BC71FE091C800870CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B61BC41FE091C800870CF6 /* AppDelegate.swift */; };
 		35B61BC81FE091C800870CF6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35B61BC61FE091C800870CF6 /* Info.plist */; };
 		35C3E6D31FE08A4500EE4474 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3E6D21FE08A4500EE4474 /* ViewController.swift */; };
-		35C3E6E41FE08A4500EE4474 /* LynxConfigUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3E6E31FE08A4500EE4474 /* LynxConfigUtilityTests.swift */; };
-		35C3E6EF1FE08A4600EE4474 /* LynxConfigUtilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3E6EE1FE08A4600EE4474 /* LynxConfigUtilityUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		35C3E6E01FE08A4500EE4474 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35C3E6C51FE08A4500EE4474 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 35C3E6CC1FE08A4500EE4474;
-			remoteInfo = LynxConfigUtility;
-		};
-		35C3E6EB1FE08A4600EE4474 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35C3E6C51FE08A4500EE4474 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 35C3E6CC1FE08A4500EE4474;
-			remoteInfo = LynxConfigUtility;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		35B61BBD1FE0915B00870CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,30 +22,10 @@
 		35B61BC61FE091C800870CF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35C3E6CD1FE08A4500EE4474 /* LynxConfigUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LynxConfigUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C3E6D21FE08A4500EE4474 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		35C3E6DF1FE08A4500EE4474 /* LynxConfigUtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynxConfigUtilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		35C3E6E31FE08A4500EE4474 /* LynxConfigUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynxConfigUtilityTests.swift; sourceTree = "<group>"; };
-		35C3E6E51FE08A4600EE4474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35C3E6EA1FE08A4600EE4474 /* LynxConfigUtilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynxConfigUtilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		35C3E6EE1FE08A4600EE4474 /* LynxConfigUtilityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynxConfigUtilityUITests.swift; sourceTree = "<group>"; };
-		35C3E6F01FE08A4600EE4474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		35C3E6CA1FE08A4500EE4474 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35C3E6DC1FE08A4500EE4474 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35C3E6E71FE08A4600EE4474 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -104,8 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				35C3E6CF1FE08A4500EE4474 /* LynxConfigUtility */,
-				35C3E6E21FE08A4500EE4474 /* LynxConfigUtilityTests */,
-				35C3E6ED1FE08A4600EE4474 /* LynxConfigUtilityUITests */,
 				35C3E6CE1FE08A4500EE4474 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				35C3E6CD1FE08A4500EE4474 /* LynxConfigUtility.app */,
-				35C3E6DF1FE08A4500EE4474 /* LynxConfigUtilityTests.xctest */,
-				35C3E6EA1FE08A4600EE4474 /* LynxConfigUtilityUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,30 +80,12 @@
 		35C3E6CF1FE08A4500EE4474 /* LynxConfigUtility */ = {
 			isa = PBXGroup;
 			children = (
+				35B61BC31FE091C800870CF6 /* AppInfo */,
 				35B61BBC1FE0915B00870CF6 /* Assets */,
 				35B61BBF1FE0916500870CF6 /* Storyboards */,
-				35B61BC31FE091C800870CF6 /* AppInfo */,
 				35C3E6D21FE08A4500EE4474 /* ViewController.swift */,
 			);
 			path = LynxConfigUtility;
-			sourceTree = "<group>";
-		};
-		35C3E6E21FE08A4500EE4474 /* LynxConfigUtilityTests */ = {
-			isa = PBXGroup;
-			children = (
-				35C3E6E31FE08A4500EE4474 /* LynxConfigUtilityTests.swift */,
-				35C3E6E51FE08A4600EE4474 /* Info.plist */,
-			);
-			path = LynxConfigUtilityTests;
-			sourceTree = "<group>";
-		};
-		35C3E6ED1FE08A4600EE4474 /* LynxConfigUtilityUITests */ = {
-			isa = PBXGroup;
-			children = (
-				35C3E6EE1FE08A4600EE4474 /* LynxConfigUtilityUITests.swift */,
-				35C3E6F01FE08A4600EE4474 /* Info.plist */,
-			);
-			path = LynxConfigUtilityUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,42 +108,6 @@
 			productReference = 35C3E6CD1FE08A4500EE4474 /* LynxConfigUtility.app */;
 			productType = "com.apple.product-type.application";
 		};
-		35C3E6DE1FE08A4500EE4474 /* LynxConfigUtilityTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35C3E6F61FE08A4600EE4474 /* Build configuration list for PBXNativeTarget "LynxConfigUtilityTests" */;
-			buildPhases = (
-				35C3E6DB1FE08A4500EE4474 /* Sources */,
-				35C3E6DC1FE08A4500EE4474 /* Frameworks */,
-				35C3E6DD1FE08A4500EE4474 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				35C3E6E11FE08A4500EE4474 /* PBXTargetDependency */,
-			);
-			name = LynxConfigUtilityTests;
-			productName = LynxConfigUtilityTests;
-			productReference = 35C3E6DF1FE08A4500EE4474 /* LynxConfigUtilityTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		35C3E6E91FE08A4600EE4474 /* LynxConfigUtilityUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35C3E6F91FE08A4600EE4474 /* Build configuration list for PBXNativeTarget "LynxConfigUtilityUITests" */;
-			buildPhases = (
-				35C3E6E61FE08A4600EE4474 /* Sources */,
-				35C3E6E71FE08A4600EE4474 /* Frameworks */,
-				35C3E6E81FE08A4600EE4474 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				35C3E6EC1FE08A4600EE4474 /* PBXTargetDependency */,
-			);
-			name = LynxConfigUtilityUITests;
-			productName = LynxConfigUtilityUITests;
-			productReference = 35C3E6EA1FE08A4600EE4474 /* LynxConfigUtilityUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -218,16 +121,6 @@
 					35C3E6CC1FE08A4500EE4474 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					35C3E6DE1FE08A4500EE4474 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 35C3E6CC1FE08A4500EE4474;
-					};
-					35C3E6E91FE08A4600EE4474 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 35C3E6CC1FE08A4500EE4474;
 					};
 				};
 			};
@@ -245,8 +138,6 @@
 			projectRoot = "";
 			targets = (
 				35C3E6CC1FE08A4500EE4474 /* LynxConfigUtility */,
-				35C3E6DE1FE08A4500EE4474 /* LynxConfigUtilityTests */,
-				35C3E6E91FE08A4600EE4474 /* LynxConfigUtilityUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,20 +153,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		35C3E6DD1FE08A4500EE4474 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35C3E6E81FE08A4600EE4474 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -288,36 +165,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		35C3E6DB1FE08A4500EE4474 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35C3E6E41FE08A4500EE4474 /* LynxConfigUtilityTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35C3E6E61FE08A4600EE4474 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35C3E6EF1FE08A4600EE4474 /* LynxConfigUtilityUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		35C3E6E11FE08A4500EE4474 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 35C3E6CC1FE08A4500EE4474 /* LynxConfigUtility */;
-			targetProxy = 35C3E6E01FE08A4500EE4474 /* PBXContainerItemProxy */;
-		};
-		35C3E6EC1FE08A4600EE4474 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 35C3E6CC1FE08A4500EE4474 /* LynxConfigUtility */;
-			targetProxy = 35C3E6EB1FE08A4600EE4474 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		35C3E6F11FE08A4600EE4474 /* Debug */ = {
@@ -430,7 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LynxConfigUtility/LynxConfigUtility.entitlements;
+				CODE_SIGN_ENTITLEMENTS = LynxConfigUtility/AppInfo/LynxConfigUtility.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/LynxConfigUtility/AppInfo/Info.plist";
@@ -445,7 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LynxConfigUtility/LynxConfigUtility.entitlements;
+				CODE_SIGN_ENTITLEMENTS = LynxConfigUtility/AppInfo/LynxConfigUtility.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/LynxConfigUtility/AppInfo/Info.plist";
@@ -453,68 +301,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		35C3E6F71FE08A4600EE4474 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LynxConfigUtilityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtilityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LynxConfigUtility.app/Contents/MacOS/LynxConfigUtility";
-			};
-			name = Debug;
-		};
-		35C3E6F81FE08A4600EE4474 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LynxConfigUtilityTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtilityTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LynxConfigUtility.app/Contents/MacOS/LynxConfigUtility";
-			};
-			name = Release;
-		};
-		35C3E6FA1FE08A4600EE4474 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LynxConfigUtilityUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtilityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = LynxConfigUtility;
-			};
-			name = Debug;
-		};
-		35C3E6FB1FE08A4600EE4474 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LynxConfigUtilityUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtilityUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = LynxConfigUtility;
 			};
 			name = Release;
 		};
@@ -535,24 +321,6 @@
 			buildConfigurations = (
 				35C3E6F41FE08A4600EE4474 /* Debug */,
 				35C3E6F51FE08A4600EE4474 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35C3E6F61FE08A4600EE4474 /* Build configuration list for PBXNativeTarget "LynxConfigUtilityTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35C3E6F71FE08A4600EE4474 /* Debug */,
-				35C3E6F81FE08A4600EE4474 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35C3E6F91FE08A4600EE4474 /* Build configuration list for PBXNativeTarget "LynxConfigUtilityUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35C3E6FA1FE08A4600EE4474 /* Debug */,
-				35C3E6FB1FE08A4600EE4474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
