@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -336,300 +339,6 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Format" id="jxT-CU-nIS">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Format" id="GEO-Iw-cKr">
-                                    <items>
-                                        <menuItem title="Font" id="Gi5-1S-RQB">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Font" systemMenu="font" id="aXa-aM-Jaq">
-                                                <items>
-                                                    <menuItem title="Show Fonts" keyEquivalent="t" id="Q5e-8K-NDq">
-                                                        <connections>
-                                                            <action selector="orderFrontFontPanel:" target="YLy-65-1bz" id="WHr-nq-2xA"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Bold" tag="2" keyEquivalent="b" id="GB9-OM-e27">
-                                                        <connections>
-                                                            <action selector="addFontTrait:" target="YLy-65-1bz" id="hqk-hr-sYV"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Italic" tag="1" keyEquivalent="i" id="Vjx-xi-njq">
-                                                        <connections>
-                                                            <action selector="addFontTrait:" target="YLy-65-1bz" id="IHV-OB-c03"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Underline" keyEquivalent="u" id="WRG-CD-K1S">
-                                                        <connections>
-                                                            <action selector="underline:" target="Ady-hI-5gd" id="FYS-2b-JAY"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="5gT-KC-WSO"/>
-                                                    <menuItem title="Bigger" tag="3" keyEquivalent="+" id="Ptp-SP-VEL">
-                                                        <connections>
-                                                            <action selector="modifyFont:" target="YLy-65-1bz" id="Uc7-di-UnL"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Smaller" tag="4" keyEquivalent="-" id="i1d-Er-qST">
-                                                        <connections>
-                                                            <action selector="modifyFont:" target="YLy-65-1bz" id="HcX-Lf-eNd"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="kx3-Dk-x3B"/>
-                                                    <menuItem title="Kern" id="jBQ-r6-VK2">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <menu key="submenu" title="Kern" id="tlD-Oa-oAM">
-                                                            <items>
-                                                                <menuItem title="Use Default" id="GUa-eO-cwY">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="useStandardKerning:" target="Ady-hI-5gd" id="6dk-9l-Ckg"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Use None" id="cDB-IK-hbR">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="turnOffKerning:" target="Ady-hI-5gd" id="U8a-gz-Maa"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Tighten" id="46P-cB-AYj">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="tightenKerning:" target="Ady-hI-5gd" id="hr7-Nz-8ro"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Loosen" id="ogc-rX-tC1">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="loosenKerning:" target="Ady-hI-5gd" id="8i4-f9-FKE"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                            </items>
-                                                        </menu>
-                                                    </menuItem>
-                                                    <menuItem title="Ligatures" id="o6e-r0-MWq">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <menu key="submenu" title="Ligatures" id="w0m-vy-SC9">
-                                                            <items>
-                                                                <menuItem title="Use Default" id="agt-UL-0e3">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="useStandardLigatures:" target="Ady-hI-5gd" id="7uR-wd-Dx6"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Use None" id="J7y-lM-qPV">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="turnOffLigatures:" target="Ady-hI-5gd" id="iX2-gA-Ilz"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Use All" id="xQD-1f-W4t">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="useAllLigatures:" target="Ady-hI-5gd" id="KcB-kA-TuK"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                            </items>
-                                                        </menu>
-                                                    </menuItem>
-                                                    <menuItem title="Baseline" id="OaQ-X3-Vso">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <menu key="submenu" title="Baseline" id="ijk-EB-dga">
-                                                            <items>
-                                                                <menuItem title="Use Default" id="3Om-Ey-2VK">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="unscript:" target="Ady-hI-5gd" id="0vZ-95-Ywn"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Superscript" id="Rqc-34-cIF">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="superscript:" target="Ady-hI-5gd" id="3qV-fo-wpU"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Subscript" id="I0S-gh-46l">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="subscript:" target="Ady-hI-5gd" id="Q6W-4W-IGz"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Raise" id="2h7-ER-AoG">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="raiseBaseline:" target="Ady-hI-5gd" id="4sk-31-7Q9"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem title="Lower" id="1tx-W0-xDw">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="lowerBaseline:" target="Ady-hI-5gd" id="OF1-bc-KW4"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                            </items>
-                                                        </menu>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="Ndw-q3-faq"/>
-                                                    <menuItem title="Show Colors" keyEquivalent="C" id="bgn-CT-cEk">
-                                                        <connections>
-                                                            <action selector="orderFrontColorPanel:" target="Ady-hI-5gd" id="mSX-Xz-DV3"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="iMs-zA-UFJ"/>
-                                                    <menuItem title="Copy Style" keyEquivalent="c" id="5Vv-lz-BsD">
-                                                        <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                        <connections>
-                                                            <action selector="copyFont:" target="Ady-hI-5gd" id="GJO-xA-L4q"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Paste Style" keyEquivalent="v" id="vKC-jM-MkH">
-                                                        <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                        <connections>
-                                                            <action selector="pasteFont:" target="Ady-hI-5gd" id="JfD-CL-leO"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem title="Text" id="Fal-I4-PZk">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Text" id="d9c-me-L2H">
-                                                <items>
-                                                    <menuItem title="Align Left" keyEquivalent="{" id="ZM1-6Q-yy1">
-                                                        <connections>
-                                                            <action selector="alignLeft:" target="Ady-hI-5gd" id="zUv-R1-uAa"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Center" keyEquivalent="|" id="VIY-Ag-zcb">
-                                                        <connections>
-                                                            <action selector="alignCenter:" target="Ady-hI-5gd" id="spX-mk-kcS"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Justify" id="J5U-5w-g23">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="alignJustified:" target="Ady-hI-5gd" id="ljL-7U-jND"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Align Right" keyEquivalent="}" id="wb2-vD-lq4">
-                                                        <connections>
-                                                            <action selector="alignRight:" target="Ady-hI-5gd" id="r48-bG-YeY"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="4s2-GY-VfK"/>
-                                                    <menuItem title="Writing Direction" id="H1b-Si-o9J">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <menu key="submenu" title="Writing Direction" id="8mr-sm-Yjd">
-                                                            <items>
-                                                                <menuItem title="Paragraph" enabled="NO" id="ZvO-Gk-QUH">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                </menuItem>
-                                                                <menuItem id="YGs-j5-SAR">
-                                                                    <string key="title">	Default</string>
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="makeBaseWritingDirectionNatural:" target="Ady-hI-5gd" id="qtV-5e-UBP"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem id="Lbh-J2-qVU">
-                                                                    <string key="title">	Left to Right</string>
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="makeBaseWritingDirectionLeftToRight:" target="Ady-hI-5gd" id="S0X-9S-QSf"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem id="jFq-tB-4Kx">
-                                                                    <string key="title">	Right to Left</string>
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="makeBaseWritingDirectionRightToLeft:" target="Ady-hI-5gd" id="5fk-qB-AqJ"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem isSeparatorItem="YES" id="swp-gr-a21"/>
-                                                                <menuItem title="Selection" enabled="NO" id="cqv-fj-IhA">
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                </menuItem>
-                                                                <menuItem id="Nop-cj-93Q">
-                                                                    <string key="title">	Default</string>
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="makeTextWritingDirectionNatural:" target="Ady-hI-5gd" id="lPI-Se-ZHp"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem id="BgM-ve-c93">
-                                                                    <string key="title">	Left to Right</string>
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="makeTextWritingDirectionLeftToRight:" target="Ady-hI-5gd" id="caW-Bv-w94"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                                <menuItem id="RB4-Sm-HuC">
-                                                                    <string key="title">	Right to Left</string>
-                                                                    <modifierMask key="keyEquivalentModifierMask"/>
-                                                                    <connections>
-                                                                        <action selector="makeTextWritingDirectionRightToLeft:" target="Ady-hI-5gd" id="EXD-6r-ZUu"/>
-                                                                    </connections>
-                                                                </menuItem>
-                                                            </items>
-                                                        </menu>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="fKy-g9-1gm"/>
-                                                    <menuItem title="Show Ruler" id="vLm-3I-IUL">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleRuler:" target="Ady-hI-5gd" id="FOx-HJ-KwY"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Copy Ruler" keyEquivalent="c" id="MkV-Pr-PK5">
-                                                        <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                                                        <connections>
-                                                            <action selector="copyRuler:" target="Ady-hI-5gd" id="71i-fW-3W2"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Paste Ruler" keyEquivalent="v" id="LVM-kO-fVI">
-                                                        <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                                                        <connections>
-                                                            <action selector="pasteRuler:" target="Ady-hI-5gd" id="cSh-wd-qM2"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
-                            <menuItem title="View" id="H8h-7b-M4v">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="View" id="HyV-fh-RgO">
-                                    <items>
-                                        <menuItem title="Show Toolbar" keyEquivalent="t" id="snW-S8-Cw5">
-                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="toggleToolbarShown:" target="Ady-hI-5gd" id="BXY-wc-z0C"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Customize Toolbar…" id="1UK-8n-QPP">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="runToolbarCustomizationPalette:" target="Ady-hI-5gd" id="pQI-g3-MTW"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="hB3-LF-h0Y"/>
-                                        <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
-                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
-                                            <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="toggleFullScreen:" target="Ady-hI-5gd" id="dU3-MA-1Rq"/>
-                                            </connections>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
                             <menuItem title="Window" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
@@ -673,45 +382,1280 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="LynxConfigUtility" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="69" y="-99"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Lynx Config Utility" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="990" height="400"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-			<connections>
+                        <value key="minSize" type="size" width="990" height="400"/>
+                        <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="2ke-ST-y4G" kind="relationship" relationship="window.shadowedContentViewController" id="5UD-dS-boh"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="-163" y="198"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Tab View Controller-->
+        <scene sceneID="c0B-tf-udz">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <tabViewController id="2ke-ST-y4G" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem identifier="" id="4j4-9N-9tR"/>
+                        <tabViewItem identifier="" id="VeM-qM-P7Z"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="hgi-cL-pTH">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <tabViewItems/>
+                        <connections>
+                            <outlet property="delegate" destination="2ke-ST-y4G" id="Okk-Fr-DET"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="hgi-cL-pTH" id="Nea-fb-l2C"/>
+                        <segue destination="PLA-fe-zKL" kind="relationship" relationship="tabItems" id="7pu-1e-N5d"/>
+                        <segue destination="TY1-la-yGm" kind="relationship" relationship="tabItems" id="fGp-h9-XLm"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="YtN-RF-3uE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="780"/>
+        </scene>
+        <!--DMX Deck-->
+        <scene sceneID="OlL-LN-1gh">
+            <objects>
+                <viewController title="DMX Deck" id="PLA-fe-zKL" customClass="DMXDeckViewController" customModule="Lynx_Config_Utility" sceneMemberID="viewController">
+                    <view key="view" id="gPc-Gd-YNx">
+                        <rect key="frame" x="0.0" y="0.0" width="990" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0ei-5W-jtq" userLabel="titleLabel">
+                                <rect key="frame" x="435" y="355" width="120" height="30"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DMX Deck" id="fWa-dI-avu">
+                                    <font key="font" metaFont="system" size="25"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cz9-4p-jqS" userLabel="subtitleLabel">
+                                <rect key="frame" x="373" y="333" width="245" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Simple DMX output across 16 channels." id="xlw-ar-b6g">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jFv-No-LxN" userLabel="channelLabel">
+                                <rect key="frame" x="13" y="302" width="67" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Channel" id="M9Q-4H-afq">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZiW-rv-oZL" userLabel="sequentialChannelsButton">
+                                <rect key="frame" x="13" y="276" width="173" height="18"/>
+                                <buttonCell key="cell" type="check" title="Use Sequential Channels" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="6g4-fH-JIa">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="sequentialChannelsButtonClick:" target="PLA-fe-zKL" id="RkQ-mh-dyE"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="evT-Gu-bei" userLabel="linkAllChannelsButton">
+                                <rect key="frame" x="197" y="276" width="126" height="18"/>
+                                <buttonCell key="cell" type="check" title="Link All Channels" bezelStyle="regularSquare" imagePosition="left" inset="2" id="xt3-AE-v1K">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="linkAllChannelsButtonClick:" target="PLA-fe-zKL" id="s3T-vJ-36h"/>
+                                </connections>
+                            </button>
+                            <stackView distribution="equalSpacing" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="cPM-w6-ra6" userLabel="containerStackView">
+                                <rect key="frame" x="15" y="15" width="960" height="248"/>
+                                <subviews>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="NX8-VV-cUw" userLabel="sliderBox1">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="yae-Oe-CKH">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="crh-mV-hhR" userLabel="slderCombo1">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="HLe-Ug-rco"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="nT4-cd-Tc1">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="fS2-Th-PhP"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="LIY-gy-J2n"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Xg-ld-Am3" userLabel="verticalSlider1">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="oSr-9R-Vee"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="ywL-Vt-0HY"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wCz-YA-Op4" userLabel="sliderLabel1">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="DNK-Oj-Tbv">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BZa-cG-zbh" userLabel="linkCheckBox1">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="QRO-w1-4Ce">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="m1E-7e-SSJ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Xg-ld-Am3" firstAttribute="centerX" secondItem="yae-Oe-CKH" secondAttribute="centerX" id="AhB-h0-qKo"/>
+                                                <constraint firstAttribute="bottom" secondItem="BZa-cG-zbh" secondAttribute="bottom" constant="5" id="Arr-9W-R7O"/>
+                                                <constraint firstItem="crh-mV-hhR" firstAttribute="centerX" secondItem="yae-Oe-CKH" secondAttribute="centerX" id="EvT-Qe-oG7"/>
+                                                <constraint firstItem="BZa-cG-zbh" firstAttribute="top" secondItem="wCz-YA-Op4" secondAttribute="bottom" constant="10" id="KxX-25-glg"/>
+                                                <constraint firstItem="wCz-YA-Op4" firstAttribute="top" secondItem="5Xg-ld-Am3" secondAttribute="bottom" constant="15" id="SxX-zC-Dq0"/>
+                                                <constraint firstItem="BZa-cG-zbh" firstAttribute="centerX" secondItem="yae-Oe-CKH" secondAttribute="centerX" id="WlF-O3-e5l"/>
+                                                <constraint firstItem="wCz-YA-Op4" firstAttribute="centerX" secondItem="yae-Oe-CKH" secondAttribute="centerX" id="fqX-CR-euB"/>
+                                                <constraint firstItem="5Xg-ld-Am3" firstAttribute="top" secondItem="crh-mV-hhR" secondAttribute="bottom" constant="15" id="q9k-wa-La3"/>
+                                                <constraint firstItem="crh-mV-hhR" firstAttribute="top" secondItem="yae-Oe-CKH" secondAttribute="top" constant="5" id="wNi-l0-En8"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="6e1-r1-Ti7"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="YCQ-Jq-OJR" userLabel="sliderBox2">
+                                        <rect key="frame" x="60" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="Zhh-Fa-mOb">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ums-Wy-BSC" userLabel="slderCombo2">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="fhS-fv-dsQ"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="uRP-a7-IFt">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="K17-mW-0W8"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="Flr-SU-3n7"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="en9-MW-kya" userLabel="verticalSlider2">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="G9k-0m-D7M"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="TJF-vE-Fhj"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Zx-08-jHt" userLabel="sliderLabel2">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="Gcv-It-RRL">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vjn-4x-Wkj" userLabel="linkCheckBox2">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="uTF-BB-vsv">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="LS5-gQ-xyl"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ums-Wy-BSC" firstAttribute="top" secondItem="Zhh-Fa-mOb" secondAttribute="top" constant="5" id="DNo-WF-pZV"/>
+                                                <constraint firstItem="3Zx-08-jHt" firstAttribute="top" secondItem="en9-MW-kya" secondAttribute="bottom" constant="15" id="Dd9-A7-18V"/>
+                                                <constraint firstItem="vjn-4x-Wkj" firstAttribute="top" secondItem="3Zx-08-jHt" secondAttribute="bottom" constant="10" id="NO3-9k-9TJ"/>
+                                                <constraint firstItem="en9-MW-kya" firstAttribute="centerX" secondItem="Zhh-Fa-mOb" secondAttribute="centerX" id="NQY-kW-rdL"/>
+                                                <constraint firstItem="3Zx-08-jHt" firstAttribute="centerX" secondItem="Zhh-Fa-mOb" secondAttribute="centerX" id="i9Z-QE-cZD"/>
+                                                <constraint firstItem="Ums-Wy-BSC" firstAttribute="centerX" secondItem="Zhh-Fa-mOb" secondAttribute="centerX" id="kYR-ep-jUM"/>
+                                                <constraint firstAttribute="bottom" secondItem="vjn-4x-Wkj" secondAttribute="bottom" constant="5" id="lMS-EK-NUP"/>
+                                                <constraint firstItem="vjn-4x-Wkj" firstAttribute="centerX" secondItem="Zhh-Fa-mOb" secondAttribute="centerX" id="mHq-iO-8Uc"/>
+                                                <constraint firstItem="en9-MW-kya" firstAttribute="top" secondItem="Ums-Wy-BSC" secondAttribute="bottom" constant="15" id="q9C-N4-SwP"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="hHO-k6-Mpr"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="6nN-0C-7Av" userLabel="sliderBox3">
+                                        <rect key="frame" x="120" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="3AG-zR-SHd">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="1di-QR-hdb" userLabel="slderCombo3">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="QzD-re-NgL"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="aJF-yT-aoo">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="zRR-31-4Bc"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="1K1-RB-V60"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rjp-n5-qtq" userLabel="verticalSlider3">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="SXz-wb-FiH"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="3gj-vd-T4A"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OLH-k6-q5J" userLabel="sliderLabel3">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="z1R-ze-Et6">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hm4-Xv-4Dt" userLabel="linkCheckBox3">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="JwS-Sb-PEJ">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="ZgE-XT-xLX"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Rjp-n5-qtq" firstAttribute="centerX" secondItem="3AG-zR-SHd" secondAttribute="centerX" id="61B-UE-R12"/>
+                                                <constraint firstItem="1di-QR-hdb" firstAttribute="top" secondItem="3AG-zR-SHd" secondAttribute="top" constant="5" id="CaG-Pq-xCC"/>
+                                                <constraint firstItem="Hm4-Xv-4Dt" firstAttribute="centerX" secondItem="3AG-zR-SHd" secondAttribute="centerX" id="TQt-EF-bgT"/>
+                                                <constraint firstItem="Hm4-Xv-4Dt" firstAttribute="top" secondItem="OLH-k6-q5J" secondAttribute="bottom" constant="10" id="ZkW-MM-sHC"/>
+                                                <constraint firstItem="OLH-k6-q5J" firstAttribute="top" secondItem="Rjp-n5-qtq" secondAttribute="bottom" constant="15" id="hwJ-PX-At8"/>
+                                                <constraint firstAttribute="bottom" secondItem="Hm4-Xv-4Dt" secondAttribute="bottom" constant="5" id="k2I-G7-5eC"/>
+                                                <constraint firstItem="Rjp-n5-qtq" firstAttribute="top" secondItem="1di-QR-hdb" secondAttribute="bottom" constant="15" id="qJz-Z5-mHT"/>
+                                                <constraint firstItem="OLH-k6-q5J" firstAttribute="centerX" secondItem="3AG-zR-SHd" secondAttribute="centerX" id="t60-ox-RSw"/>
+                                                <constraint firstItem="1di-QR-hdb" firstAttribute="centerX" secondItem="3AG-zR-SHd" secondAttribute="centerX" id="waR-TY-DKn"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Gbe-29-7af"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="YAn-Cq-ZlS" userLabel="sliderBox4">
+                                        <rect key="frame" x="180" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="bAQ-Xy-vE8">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="6h1-NO-19d" userLabel="slderCombo4">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="MEd-Az-duV"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="wgn-rw-3fg">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="6ON-bk-4QZ"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="2X6-kl-Epd"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dgm-JE-nyU" userLabel="verticalSlider4">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="2vm-Qn-Ss4"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="Tzn-IS-qMa"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sbq-Wk-ys4" userLabel="sliderLabel4">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="ces-B0-WFs">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5yx-Cq-i9a" userLabel="linkCheckBox4">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="11W-TJ-yrm">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="Pg1-B5-PMD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5yx-Cq-i9a" firstAttribute="top" secondItem="Sbq-Wk-ys4" secondAttribute="bottom" constant="10" id="AAN-l7-5Zi"/>
+                                                <constraint firstItem="Dgm-JE-nyU" firstAttribute="centerX" secondItem="bAQ-Xy-vE8" secondAttribute="centerX" id="IvN-Tg-nUN"/>
+                                                <constraint firstItem="6h1-NO-19d" firstAttribute="top" secondItem="bAQ-Xy-vE8" secondAttribute="top" constant="5" id="Mer-uC-vkP"/>
+                                                <constraint firstAttribute="bottom" secondItem="5yx-Cq-i9a" secondAttribute="bottom" constant="5" id="Rg3-P8-Dul"/>
+                                                <constraint firstItem="5yx-Cq-i9a" firstAttribute="centerX" secondItem="bAQ-Xy-vE8" secondAttribute="centerX" id="bR2-Kw-OUF"/>
+                                                <constraint firstItem="6h1-NO-19d" firstAttribute="centerX" secondItem="bAQ-Xy-vE8" secondAttribute="centerX" id="ddV-vD-HLv"/>
+                                                <constraint firstItem="Dgm-JE-nyU" firstAttribute="top" secondItem="6h1-NO-19d" secondAttribute="bottom" constant="15" id="h7a-qs-fck"/>
+                                                <constraint firstItem="Sbq-Wk-ys4" firstAttribute="centerX" secondItem="bAQ-Xy-vE8" secondAttribute="centerX" id="quR-ad-tBc"/>
+                                                <constraint firstItem="Sbq-Wk-ys4" firstAttribute="top" secondItem="Dgm-JE-nyU" secondAttribute="bottom" constant="15" id="yyZ-L7-RCh"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="RIs-jT-8Kx"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-Sl-EUp" userLabel="sliderBox5">
+                                        <rect key="frame" x="240" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="AXg-a0-7rW">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sjc-BE-dX4" userLabel="slderCombo5">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="yir-Qz-umB"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="IB2-iE-TSr">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="6Vs-J4-mrg"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="S3U-xl-hPG"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IOZ-c7-yC7" userLabel="verticalSlider5">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="itu-jw-ghQ"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="lnj-5M-gSw"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Rx-qC-Nu4" userLabel="sliderLabel5">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="9jk-Bv-BHk">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uze-Wt-p1m" userLabel="linkCheckBox5">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="aVx-Ak-7Bp">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="XG8-U8-gH6"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IOZ-c7-yC7" firstAttribute="top" secondItem="Sjc-BE-dX4" secondAttribute="bottom" constant="15" id="0kD-Pt-5oV"/>
+                                                <constraint firstAttribute="bottom" secondItem="Uze-Wt-p1m" secondAttribute="bottom" constant="5" id="ATp-Az-bfd"/>
+                                                <constraint firstItem="5Rx-qC-Nu4" firstAttribute="top" secondItem="IOZ-c7-yC7" secondAttribute="bottom" constant="15" id="Ref-Km-K5u"/>
+                                                <constraint firstItem="5Rx-qC-Nu4" firstAttribute="centerX" secondItem="AXg-a0-7rW" secondAttribute="centerX" id="fZX-h6-3mG"/>
+                                                <constraint firstItem="Sjc-BE-dX4" firstAttribute="centerX" secondItem="AXg-a0-7rW" secondAttribute="centerX" id="heq-Xe-zds"/>
+                                                <constraint firstItem="Sjc-BE-dX4" firstAttribute="top" secondItem="AXg-a0-7rW" secondAttribute="top" constant="5" id="kL0-y3-aPU"/>
+                                                <constraint firstItem="Uze-Wt-p1m" firstAttribute="centerX" secondItem="AXg-a0-7rW" secondAttribute="centerX" id="rfx-AY-Mcf"/>
+                                                <constraint firstItem="Uze-Wt-p1m" firstAttribute="top" secondItem="5Rx-qC-Nu4" secondAttribute="bottom" constant="10" id="wfK-Fj-2xK"/>
+                                                <constraint firstItem="IOZ-c7-yC7" firstAttribute="centerX" secondItem="AXg-a0-7rW" secondAttribute="centerX" id="xCg-eU-MfM"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Jcw-va-1jA"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="oUQ-z0-msQ" userLabel="sliderBox6">
+                                        <rect key="frame" x="300" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="bVr-gB-Eqz">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="qbV-OF-Nfq" userLabel="slderCombo6">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="rdd-Sd-mH5"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="RNa-NR-mzv">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="uab-yV-Qmd"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="8XL-OM-UYS"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="id1-SH-Na0" userLabel="verticalSlider6">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="Mmf-U4-ntL"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="1NW-7X-TdC"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xWq-VY-7fc" userLabel="sliderLabel6">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="jj9-CZ-PgN">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ceW-z0-mnQ" userLabel="linkCheckBox6">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="pyL-FC-zmY">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="Ybd-Ge-1w7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="id1-SH-Na0" firstAttribute="centerX" secondItem="bVr-gB-Eqz" secondAttribute="centerX" id="5eE-zf-jdo"/>
+                                                <constraint firstItem="xWq-VY-7fc" firstAttribute="centerX" secondItem="bVr-gB-Eqz" secondAttribute="centerX" id="HrK-TP-EsY"/>
+                                                <constraint firstItem="qbV-OF-Nfq" firstAttribute="top" secondItem="bVr-gB-Eqz" secondAttribute="top" constant="5" id="K1T-Kz-86i"/>
+                                                <constraint firstItem="qbV-OF-Nfq" firstAttribute="centerX" secondItem="bVr-gB-Eqz" secondAttribute="centerX" id="Lne-KC-44j"/>
+                                                <constraint firstItem="ceW-z0-mnQ" firstAttribute="top" secondItem="xWq-VY-7fc" secondAttribute="bottom" constant="10" id="Oqh-bB-1jl"/>
+                                                <constraint firstItem="ceW-z0-mnQ" firstAttribute="centerX" secondItem="bVr-gB-Eqz" secondAttribute="centerX" id="iCZ-b2-F59"/>
+                                                <constraint firstItem="xWq-VY-7fc" firstAttribute="top" secondItem="id1-SH-Na0" secondAttribute="bottom" constant="15" id="jR6-0D-tFE"/>
+                                                <constraint firstItem="id1-SH-Na0" firstAttribute="top" secondItem="qbV-OF-Nfq" secondAttribute="bottom" constant="15" id="r7S-eo-eSr"/>
+                                                <constraint firstAttribute="bottom" secondItem="ceW-z0-mnQ" secondAttribute="bottom" constant="5" id="vdv-nU-Fdk"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="oWz-Ai-zqu"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="R3e-b6-hQc" userLabel="sliderBox7">
+                                        <rect key="frame" x="360" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="Tnv-hw-PNh">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="h0t-5S-vB8" userLabel="slderCombo7">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="rkh-0W-oSo"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="M85-BP-Ffw">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="8rf-Rt-elh"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="u7s-3X-fj8"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NWu-mK-kGf" userLabel="verticalSlider7">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="IMu-tu-OxT"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="o59-sf-S1B"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mc0-uw-dlu" userLabel="sliderLabel7">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="QiY-wb-Gpn">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YnS-VC-h9s" userLabel="linkCheckBox7">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Wex-f2-fft">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="G23-Ei-YTe"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NWu-mK-kGf" firstAttribute="centerX" secondItem="Tnv-hw-PNh" secondAttribute="centerX" id="CbI-XF-bHH"/>
+                                                <constraint firstItem="NWu-mK-kGf" firstAttribute="top" secondItem="h0t-5S-vB8" secondAttribute="bottom" constant="15" id="EZu-ws-dh7"/>
+                                                <constraint firstItem="YnS-VC-h9s" firstAttribute="centerX" secondItem="Tnv-hw-PNh" secondAttribute="centerX" id="GXg-HF-ue4"/>
+                                                <constraint firstItem="Mc0-uw-dlu" firstAttribute="top" secondItem="NWu-mK-kGf" secondAttribute="bottom" constant="15" id="Tfi-dX-BuR"/>
+                                                <constraint firstItem="Mc0-uw-dlu" firstAttribute="centerX" secondItem="Tnv-hw-PNh" secondAttribute="centerX" id="cPw-dV-7e3"/>
+                                                <constraint firstItem="h0t-5S-vB8" firstAttribute="centerX" secondItem="Tnv-hw-PNh" secondAttribute="centerX" id="cSC-Lz-QdI"/>
+                                                <constraint firstAttribute="bottom" secondItem="YnS-VC-h9s" secondAttribute="bottom" constant="5" id="uKX-ko-zCU"/>
+                                                <constraint firstItem="h0t-5S-vB8" firstAttribute="top" secondItem="Tnv-hw-PNh" secondAttribute="top" constant="5" id="y9r-L8-rS9"/>
+                                                <constraint firstItem="YnS-VC-h9s" firstAttribute="top" secondItem="Mc0-uw-dlu" secondAttribute="bottom" constant="10" id="z2O-8h-DeY"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Hzc-dM-hIT"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="3kA-Rf-FCd" userLabel="sliderBox8">
+                                        <rect key="frame" x="420" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="uor-gy-flj">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="TAR-cB-gh6" userLabel="slderCombo8">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="nyQ-rx-Bgv"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="N8s-nj-ydu">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="Juf-jz-iSS"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="GoP-2F-8gl"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eha-sC-uxK" userLabel="verticalSlider8">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="qWt-Ph-FJX"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="eIV-Yf-Eb8"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zqJ-cC-F60" userLabel="sliderLabel8">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="7DH-TR-uid">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SYt-aw-eax" userLabel="linkCheckBox8">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="jsT-ti-io8">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="OCQ-7X-MNr"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zqJ-cC-F60" firstAttribute="top" secondItem="eha-sC-uxK" secondAttribute="bottom" constant="15" id="8wx-Nc-Dk3"/>
+                                                <constraint firstItem="SYt-aw-eax" firstAttribute="centerX" secondItem="uor-gy-flj" secondAttribute="centerX" id="TgR-A0-LBv"/>
+                                                <constraint firstItem="TAR-cB-gh6" firstAttribute="top" secondItem="uor-gy-flj" secondAttribute="top" constant="5" id="Vr3-1a-bKg"/>
+                                                <constraint firstItem="eha-sC-uxK" firstAttribute="top" secondItem="TAR-cB-gh6" secondAttribute="bottom" constant="15" id="bYE-br-qTb"/>
+                                                <constraint firstAttribute="bottom" secondItem="SYt-aw-eax" secondAttribute="bottom" constant="5" id="fAi-Ni-9nb"/>
+                                                <constraint firstItem="eha-sC-uxK" firstAttribute="centerX" secondItem="uor-gy-flj" secondAttribute="centerX" id="ik5-4G-mcd"/>
+                                                <constraint firstItem="SYt-aw-eax" firstAttribute="top" secondItem="zqJ-cC-F60" secondAttribute="bottom" constant="10" id="iq0-1J-Fig"/>
+                                                <constraint firstItem="zqJ-cC-F60" firstAttribute="centerX" secondItem="uor-gy-flj" secondAttribute="centerX" id="kRG-am-x2U"/>
+                                                <constraint firstItem="TAR-cB-gh6" firstAttribute="centerX" secondItem="uor-gy-flj" secondAttribute="centerX" id="wKB-uq-gfG"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="unj-xb-nD9"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5l3-p2-1R3" userLabel="sliderBox9">
+                                        <rect key="frame" x="480" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="YJ7-Vs-lMS">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="BSb-tS-6rM" userLabel="slderCombo9">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="ER4-5s-5Yv"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="dHm-Np-Xs3">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="blz-GS-brd"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="BfM-Y9-xJU"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vU6-P2-BTi" userLabel="verticalSlider9">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="PHz-5S-rb1"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="XhG-MW-dyg"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q8M-rY-BMz" userLabel="sliderLabel9">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="LTo-Lc-QDo">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gA2-WY-AyY" userLabel="linkCheckBox9">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="hkR-N5-G9z">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="HNV-ae-D0D"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BSb-tS-6rM" firstAttribute="centerX" secondItem="YJ7-Vs-lMS" secondAttribute="centerX" id="9Ux-E4-usH"/>
+                                                <constraint firstItem="gA2-WY-AyY" firstAttribute="top" secondItem="q8M-rY-BMz" secondAttribute="bottom" constant="10" id="BiN-mD-dzJ"/>
+                                                <constraint firstItem="q8M-rY-BMz" firstAttribute="top" secondItem="vU6-P2-BTi" secondAttribute="bottom" constant="15" id="Cfw-KS-Zj9"/>
+                                                <constraint firstItem="vU6-P2-BTi" firstAttribute="centerX" secondItem="YJ7-Vs-lMS" secondAttribute="centerX" id="DCw-T5-84A"/>
+                                                <constraint firstAttribute="bottom" secondItem="gA2-WY-AyY" secondAttribute="bottom" constant="5" id="MVg-T7-8t9"/>
+                                                <constraint firstItem="gA2-WY-AyY" firstAttribute="centerX" secondItem="YJ7-Vs-lMS" secondAttribute="centerX" id="MXL-RU-Jn4"/>
+                                                <constraint firstItem="q8M-rY-BMz" firstAttribute="centerX" secondItem="YJ7-Vs-lMS" secondAttribute="centerX" id="a5b-nf-prE"/>
+                                                <constraint firstItem="vU6-P2-BTi" firstAttribute="top" secondItem="BSb-tS-6rM" secondAttribute="bottom" constant="15" id="bug-li-dBh"/>
+                                                <constraint firstItem="BSb-tS-6rM" firstAttribute="top" secondItem="YJ7-Vs-lMS" secondAttribute="top" constant="5" id="nbU-P2-fd2"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Jws-Qb-0Ne"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-UZ-Vgf" userLabel="sliderBox10">
+                                        <rect key="frame" x="540" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="aKG-ba-9xI">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="7fb-58-FVF" userLabel="slderCombo10">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="VdF-Jh-dok"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="hcc-8t-y7d">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="I2f-EN-ghd"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="IM0-dv-0te"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oBl-mA-QGe" userLabel="verticalSlider10">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="N5w-TA-s5H"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="eEB-fa-1CA"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bq5-mB-EOT" userLabel="sliderLabel10">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="BNg-OW-EXW">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-A0-wiX" userLabel="linkCheckBox10">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="T91-XR-6VW">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="O3x-VF-n6E"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oBl-mA-QGe" firstAttribute="top" secondItem="7fb-58-FVF" secondAttribute="bottom" constant="15" id="Gbj-Fr-z9c"/>
+                                                <constraint firstItem="bq5-mB-EOT" firstAttribute="centerX" secondItem="aKG-ba-9xI" secondAttribute="centerX" id="JdN-Fs-zcM"/>
+                                                <constraint firstItem="bJl-A0-wiX" firstAttribute="top" secondItem="bq5-mB-EOT" secondAttribute="bottom" constant="10" id="KVD-a1-W6f"/>
+                                                <constraint firstItem="7fb-58-FVF" firstAttribute="centerX" secondItem="aKG-ba-9xI" secondAttribute="centerX" id="Qly-75-It6"/>
+                                                <constraint firstItem="oBl-mA-QGe" firstAttribute="centerX" secondItem="aKG-ba-9xI" secondAttribute="centerX" id="Vbe-Ys-8MF"/>
+                                                <constraint firstItem="bq5-mB-EOT" firstAttribute="top" secondItem="oBl-mA-QGe" secondAttribute="bottom" constant="15" id="Xi1-MT-YfL"/>
+                                                <constraint firstItem="7fb-58-FVF" firstAttribute="top" secondItem="aKG-ba-9xI" secondAttribute="top" constant="5" id="bZu-2q-nc0"/>
+                                                <constraint firstAttribute="bottom" secondItem="bJl-A0-wiX" secondAttribute="bottom" constant="5" id="hZV-qd-e0e"/>
+                                                <constraint firstItem="bJl-A0-wiX" firstAttribute="centerX" secondItem="aKG-ba-9xI" secondAttribute="centerX" id="qox-c1-LrU"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="ggZ-pY-TZ7"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="R6G-ba-cJO" userLabel="sliderBox11">
+                                        <rect key="frame" x="600" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="LRF-0g-wqq">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="sJg-ky-0cE" userLabel="slderCombo11">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="ouY-cF-Nxw"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="O21-Ic-0GM">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="f2u-eX-S3e"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="uus-Ac-hSg"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-Z6-W1y" userLabel="verticalSlider11">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="ga2-lF-1VN"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="4YD-VG-wUv"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KyN-X5-NhJ" userLabel="sliderLabel11">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="Evo-NB-bp8">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Nr0-Jh-wWk" userLabel="linkCheckBox11">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="nT0-XH-iju">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="FBg-dT-LfB"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KyN-X5-NhJ" firstAttribute="centerX" secondItem="LRF-0g-wqq" secondAttribute="centerX" id="5XG-oF-N23"/>
+                                                <constraint firstItem="Nr0-Jh-wWk" firstAttribute="top" secondItem="KyN-X5-NhJ" secondAttribute="bottom" constant="10" id="Ga1-V7-E6m"/>
+                                                <constraint firstItem="sJg-ky-0cE" firstAttribute="centerX" secondItem="LRF-0g-wqq" secondAttribute="centerX" id="RSZ-th-kct"/>
+                                                <constraint firstItem="KyN-X5-NhJ" firstAttribute="top" secondItem="AtO-Z6-W1y" secondAttribute="bottom" constant="15" id="efO-4e-C97"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nr0-Jh-wWk" secondAttribute="bottom" constant="5" id="gzX-Qg-oes"/>
+                                                <constraint firstItem="sJg-ky-0cE" firstAttribute="top" secondItem="LRF-0g-wqq" secondAttribute="top" constant="5" id="nWm-iJ-0Bu"/>
+                                                <constraint firstItem="Nr0-Jh-wWk" firstAttribute="centerX" secondItem="LRF-0g-wqq" secondAttribute="centerX" id="qvQ-u5-9MP"/>
+                                                <constraint firstItem="AtO-Z6-W1y" firstAttribute="centerX" secondItem="LRF-0g-wqq" secondAttribute="centerX" id="rEP-6v-Sol"/>
+                                                <constraint firstItem="AtO-Z6-W1y" firstAttribute="top" secondItem="sJg-ky-0cE" secondAttribute="bottom" constant="15" id="tcc-TL-CM1"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Nxf-yi-8vn"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="wqy-G1-owd" userLabel="sliderBox12">
+                                        <rect key="frame" x="660" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="qgE-Zd-RQZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="12" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-Cv-RlN" userLabel="slderCombo12">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="ROb-dx-88Y"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="iQS-XH-oCa">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="HLO-ak-Vi2"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="49l-Ow-oSc"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v8d-r4-pxd" userLabel="verticalSlider12">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="yUe-lS-yWn"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="khA-X6-T6U"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kK1-r0-282" userLabel="sliderLabel12">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="FyN-ok-i8e">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="97j-wJ-raw" userLabel="linkCheckBox12">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="rRe-KD-mas">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="CKz-V6-Ulv"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="97j-wJ-raw" firstAttribute="top" secondItem="kK1-r0-282" secondAttribute="bottom" constant="10" id="Dp8-fM-V05"/>
+                                                <constraint firstItem="97j-wJ-raw" firstAttribute="centerX" secondItem="qgE-Zd-RQZ" secondAttribute="centerX" id="VRb-km-kWp"/>
+                                                <constraint firstAttribute="bottom" secondItem="97j-wJ-raw" secondAttribute="bottom" constant="5" id="XqP-qC-IWe"/>
+                                                <constraint firstItem="kK1-r0-282" firstAttribute="centerX" secondItem="qgE-Zd-RQZ" secondAttribute="centerX" id="Yl7-dO-of7"/>
+                                                <constraint firstItem="v8d-r4-pxd" firstAttribute="top" secondItem="kWe-Cv-RlN" secondAttribute="bottom" constant="15" id="bT4-rC-Zhs"/>
+                                                <constraint firstItem="kWe-Cv-RlN" firstAttribute="centerX" secondItem="qgE-Zd-RQZ" secondAttribute="centerX" id="czs-nB-d8V"/>
+                                                <constraint firstItem="kWe-Cv-RlN" firstAttribute="top" secondItem="qgE-Zd-RQZ" secondAttribute="top" constant="5" id="kkz-oE-axZ"/>
+                                                <constraint firstItem="v8d-r4-pxd" firstAttribute="centerX" secondItem="qgE-Zd-RQZ" secondAttribute="centerX" id="peY-r3-RmF"/>
+                                                <constraint firstItem="kK1-r0-282" firstAttribute="top" secondItem="v8d-r4-pxd" secondAttribute="bottom" constant="15" id="ybL-6l-9vm"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Bam-t9-aa7"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="vGj-DY-oZ0" userLabel="sliderBox13">
+                                        <rect key="frame" x="720" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="McQ-Dn-7EI">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="13" translatesAutoresizingMaskIntoConstraints="NO" id="U92-iK-i8e" userLabel="slderCombo13">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="scD-Mb-r61"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="b8r-lp-vpN">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="Fer-c2-sDO"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="Mzn-lN-bfs"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qmG-c9-PTY" userLabel="verticalSlider13">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="KUQ-ym-rbO"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="VtM-vZ-LA2"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4bF-bY-Uix" userLabel="sliderLabel13">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="ksy-hP-ctJ">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="csP-Di-2bI" userLabel="linkCheckBox13">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="5Mw-R2-18W">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="Nqs-3a-a8O"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qmG-c9-PTY" firstAttribute="top" secondItem="U92-iK-i8e" secondAttribute="bottom" constant="15" id="1Ph-8p-S9t"/>
+                                                <constraint firstItem="qmG-c9-PTY" firstAttribute="centerX" secondItem="McQ-Dn-7EI" secondAttribute="centerX" id="260-p2-u7G"/>
+                                                <constraint firstItem="4bF-bY-Uix" firstAttribute="top" secondItem="qmG-c9-PTY" secondAttribute="bottom" constant="15" id="3hU-PX-6sZ"/>
+                                                <constraint firstItem="4bF-bY-Uix" firstAttribute="centerX" secondItem="McQ-Dn-7EI" secondAttribute="centerX" id="3km-ai-pCo"/>
+                                                <constraint firstAttribute="bottom" secondItem="csP-Di-2bI" secondAttribute="bottom" constant="5" id="Qz5-FH-GeG"/>
+                                                <constraint firstItem="csP-Di-2bI" firstAttribute="centerX" secondItem="McQ-Dn-7EI" secondAttribute="centerX" id="f5I-ZN-U6e"/>
+                                                <constraint firstItem="U92-iK-i8e" firstAttribute="top" secondItem="McQ-Dn-7EI" secondAttribute="top" constant="5" id="ggi-xw-8rk"/>
+                                                <constraint firstItem="csP-Di-2bI" firstAttribute="top" secondItem="4bF-bY-Uix" secondAttribute="bottom" constant="10" id="s1n-Vq-sBc"/>
+                                                <constraint firstItem="U92-iK-i8e" firstAttribute="centerX" secondItem="McQ-Dn-7EI" secondAttribute="centerX" id="sBn-7G-q0K"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Zgp-e8-zEn"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="J66-3s-T23" userLabel="sliderBox14">
+                                        <rect key="frame" x="780" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="j6W-QX-vP4">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="14" translatesAutoresizingMaskIntoConstraints="NO" id="eAN-Gq-rvK" userLabel="slderCombo14">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="B2T-YA-fWJ"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="yie-CY-mp0">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="Lz5-nP-cn2"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="yub-N2-egg"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-Tf-fzI" userLabel="verticalSlider14">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="kGQ-gL-Kpa"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="RaW-Xk-H1s"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zmB-F0-FgC" userLabel="sliderLabel14">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="a7x-j4-fA3">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V84-jo-HT3" userLabel="linkCheckBox14">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="GPn-gY-SXh">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="1F0-pG-us7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eAN-Gq-rvK" firstAttribute="centerX" secondItem="j6W-QX-vP4" secondAttribute="centerX" id="0J3-R9-OBK"/>
+                                                <constraint firstItem="V84-jo-HT3" firstAttribute="centerX" secondItem="j6W-QX-vP4" secondAttribute="centerX" id="E9i-bt-Ymw"/>
+                                                <constraint firstItem="eAN-Gq-rvK" firstAttribute="top" secondItem="j6W-QX-vP4" secondAttribute="top" constant="5" id="GED-wC-gAO"/>
+                                                <constraint firstItem="fnX-Tf-fzI" firstAttribute="centerX" secondItem="j6W-QX-vP4" secondAttribute="centerX" id="N71-yM-5KX"/>
+                                                <constraint firstAttribute="bottom" secondItem="V84-jo-HT3" secondAttribute="bottom" constant="5" id="RIA-sw-vhb"/>
+                                                <constraint firstItem="zmB-F0-FgC" firstAttribute="top" secondItem="fnX-Tf-fzI" secondAttribute="bottom" constant="15" id="SsD-28-dAk"/>
+                                                <constraint firstItem="zmB-F0-FgC" firstAttribute="centerX" secondItem="j6W-QX-vP4" secondAttribute="centerX" id="WdZ-Sa-Od6"/>
+                                                <constraint firstItem="V84-jo-HT3" firstAttribute="top" secondItem="zmB-F0-FgC" secondAttribute="bottom" constant="10" id="dKY-PG-l9Q"/>
+                                                <constraint firstItem="fnX-Tf-fzI" firstAttribute="top" secondItem="eAN-Gq-rvK" secondAttribute="bottom" constant="15" id="sc6-rh-u0W"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="0x5-1J-XLF"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-Wn-9Pl" userLabel="sliderBox15">
+                                        <rect key="frame" x="840" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="bjs-TU-eZm">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="15" translatesAutoresizingMaskIntoConstraints="NO" id="7H3-UO-Yhd" userLabel="slderCombo15">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="rsk-HF-qxV"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="n2C-bW-8KI">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="al1-8O-6XD"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="k6h-Av-PTj"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kqw-U0-4sw" userLabel="verticalSlider15">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="aVU-aZ-ARW"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="e9U-a9-Old"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="D2U-om-vYa" userLabel="sliderLabel15">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="hFM-7F-mmN">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f6k-vN-FKv" userLabel="linkCheckBox15">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="25Z-yX-YMi">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="FG0-TN-yLG"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="f6k-vN-FKv" secondAttribute="bottom" constant="5" id="9n2-oq-SbT"/>
+                                                <constraint firstItem="7H3-UO-Yhd" firstAttribute="top" secondItem="bjs-TU-eZm" secondAttribute="top" constant="5" id="HpH-PE-P6g"/>
+                                                <constraint firstItem="f6k-vN-FKv" firstAttribute="top" secondItem="D2U-om-vYa" secondAttribute="bottom" constant="10" id="Jri-SW-OyB"/>
+                                                <constraint firstItem="D2U-om-vYa" firstAttribute="top" secondItem="Kqw-U0-4sw" secondAttribute="bottom" constant="15" id="QIa-52-K6b"/>
+                                                <constraint firstItem="7H3-UO-Yhd" firstAttribute="centerX" secondItem="bjs-TU-eZm" secondAttribute="centerX" id="WJZ-KW-U19"/>
+                                                <constraint firstItem="Kqw-U0-4sw" firstAttribute="centerX" secondItem="bjs-TU-eZm" secondAttribute="centerX" id="ZyY-FH-B2z"/>
+                                                <constraint firstItem="D2U-om-vYa" firstAttribute="centerX" secondItem="bjs-TU-eZm" secondAttribute="centerX" id="aoy-hS-qYa"/>
+                                                <constraint firstItem="f6k-vN-FKv" firstAttribute="centerX" secondItem="bjs-TU-eZm" secondAttribute="centerX" id="qG8-uG-P3x"/>
+                                                <constraint firstItem="Kqw-U0-4sw" firstAttribute="top" secondItem="7H3-UO-Yhd" secondAttribute="bottom" constant="15" id="w4f-QX-PCa"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="RQ5-am-mhD"/>
+                                        </constraints>
+                                    </box>
+                                    <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="xAO-Fq-SWG" userLabel="sliderBox16">
+                                        <rect key="frame" x="900" y="0.0" width="60" height="248"/>
+                                        <view key="contentView" id="osQ-g2-578">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="248"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <comboBox verticalHuggingPriority="750" tag="16" translatesAutoresizingMaskIntoConstraints="NO" id="wjK-DM-iuL" userLabel="slderCombo16">
+                                                    <rect key="frame" x="3" y="219" width="57" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="T7y-ne-aQ8"/>
+                                                    </constraints>
+                                                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="b43-jS-iOU">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </comboBoxCell>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="PLA-fe-zKL" id="BMv-qO-gDf"/>
+                                                        <outlet property="delegate" destination="PLA-fe-zKL" id="pRp-1W-6FV"/>
+                                                    </connections>
+                                                </comboBox>
+                                                <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="88D-6c-fdq" userLabel="verticalSlider16">
+                                                    <rect key="frame" x="21" y="58" width="19" height="152"/>
+                                                    <sliderCell key="cell" continuous="YES" alignment="left" maxValue="255" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="bpB-fu-ycS"/>
+                                                    <connections>
+                                                        <action selector="verticalSliderValueChanged:" target="PLA-fe-zKL" id="B0a-Rk-UZN"/>
+                                                    </connections>
+                                                </slider>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="26o-ug-aIA" userLabel="sliderLabel16">
+                                                    <rect key="frame" x="16" y="29" width="28" height="17"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="255" id="gwa-Zl-Jej">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button toolTip="Use this field to link multiple channels together and change them simultaneously." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dkL-rC-f4O" userLabel="linkCheckBox16">
+                                                    <rect key="frame" x="19" y="3" width="22" height="18"/>
+                                                    <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="uX6-Tr-34h">
+                                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="linkCheckBoxClick:" target="PLA-fe-zKL" id="FBt-MF-cxQ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dkL-rC-f4O" firstAttribute="centerX" secondItem="osQ-g2-578" secondAttribute="centerX" id="CTs-qz-DBq"/>
+                                                <constraint firstItem="wjK-DM-iuL" firstAttribute="centerX" secondItem="osQ-g2-578" secondAttribute="centerX" id="DKZ-Oo-8qn"/>
+                                                <constraint firstItem="dkL-rC-f4O" firstAttribute="top" secondItem="26o-ug-aIA" secondAttribute="bottom" constant="10" id="Exe-zX-1ea"/>
+                                                <constraint firstItem="88D-6c-fdq" firstAttribute="centerX" secondItem="osQ-g2-578" secondAttribute="centerX" id="QNg-1K-m5m"/>
+                                                <constraint firstItem="88D-6c-fdq" firstAttribute="top" secondItem="wjK-DM-iuL" secondAttribute="bottom" constant="15" id="UVl-ym-4CW"/>
+                                                <constraint firstItem="26o-ug-aIA" firstAttribute="top" secondItem="88D-6c-fdq" secondAttribute="bottom" constant="15" id="WWG-Nk-szL"/>
+                                                <constraint firstItem="wjK-DM-iuL" firstAttribute="top" secondItem="osQ-g2-578" secondAttribute="top" constant="5" id="Zy9-lM-nnK"/>
+                                                <constraint firstAttribute="bottom" secondItem="dkL-rC-f4O" secondAttribute="bottom" constant="5" id="new-DS-Pb2"/>
+                                                <constraint firstItem="26o-ug-aIA" firstAttribute="centerX" secondItem="osQ-g2-578" secondAttribute="centerX" id="qK3-X0-XLj"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="beb-NC-ACb"/>
+                                        </constraints>
+                                    </box>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0ei-5W-jtq" firstAttribute="centerX" secondItem="gPc-Gd-YNx" secondAttribute="centerX" id="5WJ-CF-HoI"/>
+                            <constraint firstItem="ZiW-rv-oZL" firstAttribute="top" secondItem="jFv-No-LxN" secondAttribute="bottom" constant="10" id="8Ex-Ki-s9N"/>
+                            <constraint firstItem="jFv-No-LxN" firstAttribute="top" secondItem="Cz9-4p-jqS" secondAttribute="bottom" constant="10" id="APe-Gv-MF5"/>
+                            <constraint firstAttribute="bottom" secondItem="cPM-w6-ra6" secondAttribute="bottom" constant="15" id="Gbk-sB-2LH"/>
+                            <constraint firstItem="evT-Gu-bei" firstAttribute="top" secondItem="ZiW-rv-oZL" secondAttribute="top" id="MkD-yy-fut"/>
+                            <constraint firstItem="ZiW-rv-oZL" firstAttribute="leading" secondItem="gPc-Gd-YNx" secondAttribute="leading" constant="15" id="T95-lX-4vv"/>
+                            <constraint firstItem="cPM-w6-ra6" firstAttribute="top" secondItem="ZiW-rv-oZL" secondAttribute="bottom" constant="15" id="TFh-3T-6ZR"/>
+                            <constraint firstItem="evT-Gu-bei" firstAttribute="leading" secondItem="ZiW-rv-oZL" secondAttribute="trailing" constant="15" id="XhS-Xq-nY5"/>
+                            <constraint firstItem="Cz9-4p-jqS" firstAttribute="top" secondItem="0ei-5W-jtq" secondAttribute="bottom" constant="5" id="Z2L-jm-iol"/>
+                            <constraint firstItem="0ei-5W-jtq" firstAttribute="top" secondItem="gPc-Gd-YNx" secondAttribute="top" constant="15" id="ZSh-nS-WGK"/>
+                            <constraint firstAttribute="trailing" secondItem="cPM-w6-ra6" secondAttribute="trailing" constant="15" id="dxF-GO-D5O"/>
+                            <constraint firstItem="jFv-No-LxN" firstAttribute="leading" secondItem="gPc-Gd-YNx" secondAttribute="leading" constant="15" id="ebi-k7-54b"/>
+                            <constraint firstItem="Cz9-4p-jqS" firstAttribute="centerX" secondItem="gPc-Gd-YNx" secondAttribute="centerX" id="er0-qY-P40"/>
+                            <constraint firstItem="cPM-w6-ra6" firstAttribute="leading" secondItem="gPc-Gd-YNx" secondAttribute="leading" constant="15" id="g88-aB-ExZ"/>
+                            <constraint firstItem="evT-Gu-bei" firstAttribute="bottom" secondItem="ZiW-rv-oZL" secondAttribute="bottom" id="mju-Yk-ZyA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="linkAllChannelsButton" destination="evT-Gu-bei" id="TFP-Sd-gvZ"/>
+                        <outlet property="linkCheckBox1" destination="BZa-cG-zbh" id="jHl-zG-9vz"/>
+                        <outlet property="linkCheckBox10" destination="bJl-A0-wiX" id="9OM-vz-ajd"/>
+                        <outlet property="linkCheckBox11" destination="Nr0-Jh-wWk" id="8mE-aC-4Y9"/>
+                        <outlet property="linkCheckBox12" destination="97j-wJ-raw" id="qwr-Wz-JgS"/>
+                        <outlet property="linkCheckBox13" destination="csP-Di-2bI" id="qHm-sw-auX"/>
+                        <outlet property="linkCheckBox14" destination="V84-jo-HT3" id="War-ig-AKL"/>
+                        <outlet property="linkCheckBox15" destination="f6k-vN-FKv" id="0w0-sr-Ld7"/>
+                        <outlet property="linkCheckBox16" destination="dkL-rC-f4O" id="Del-x5-iiC"/>
+                        <outlet property="linkCheckBox2" destination="vjn-4x-Wkj" id="5T6-wT-RCk"/>
+                        <outlet property="linkCheckBox3" destination="Hm4-Xv-4Dt" id="9Bb-FD-kXY"/>
+                        <outlet property="linkCheckBox4" destination="5yx-Cq-i9a" id="qx3-M5-3FB"/>
+                        <outlet property="linkCheckBox5" destination="Uze-Wt-p1m" id="ldr-Sw-SmX"/>
+                        <outlet property="linkCheckBox6" destination="ceW-z0-mnQ" id="aCq-Js-o9D"/>
+                        <outlet property="linkCheckBox7" destination="YnS-VC-h9s" id="s1V-Sc-TSa"/>
+                        <outlet property="linkCheckBox8" destination="SYt-aw-eax" id="4ac-mB-5cE"/>
+                        <outlet property="linkCheckBox9" destination="gA2-WY-AyY" id="Dmk-5b-Z7e"/>
+                        <outlet property="sequentialChannelsButton" destination="ZiW-rv-oZL" id="cT6-9q-gWi"/>
+                        <outlet property="sliderCombo1" destination="crh-mV-hhR" id="DnZ-f1-M5q"/>
+                        <outlet property="sliderCombo10" destination="7fb-58-FVF" id="PoL-fM-F2R"/>
+                        <outlet property="sliderCombo11" destination="sJg-ky-0cE" id="rd8-j1-OSJ"/>
+                        <outlet property="sliderCombo12" destination="kWe-Cv-RlN" id="o4M-Hg-EMN"/>
+                        <outlet property="sliderCombo13" destination="U92-iK-i8e" id="WPg-xm-i4S"/>
+                        <outlet property="sliderCombo14" destination="eAN-Gq-rvK" id="Ggw-cL-5Jm"/>
+                        <outlet property="sliderCombo15" destination="7H3-UO-Yhd" id="i5a-by-hsD"/>
+                        <outlet property="sliderCombo16" destination="wjK-DM-iuL" id="NmO-TG-lFF"/>
+                        <outlet property="sliderCombo2" destination="Ums-Wy-BSC" id="UBL-4v-zFd"/>
+                        <outlet property="sliderCombo3" destination="1di-QR-hdb" id="FQL-mS-bXN"/>
+                        <outlet property="sliderCombo4" destination="6h1-NO-19d" id="WWW-HL-BI7"/>
+                        <outlet property="sliderCombo5" destination="Sjc-BE-dX4" id="eNY-Rf-klC"/>
+                        <outlet property="sliderCombo6" destination="qbV-OF-Nfq" id="KGr-no-rhj"/>
+                        <outlet property="sliderCombo7" destination="h0t-5S-vB8" id="NYF-Kn-7k7"/>
+                        <outlet property="sliderCombo8" destination="TAR-cB-gh6" id="SSu-5e-Xwd"/>
+                        <outlet property="sliderCombo9" destination="BSb-tS-6rM" id="5GD-6l-uKv"/>
+                        <outlet property="sliderLabel1" destination="wCz-YA-Op4" id="rzG-tr-GPV"/>
+                        <outlet property="sliderLabel10" destination="bq5-mB-EOT" id="rub-JT-LD0"/>
+                        <outlet property="sliderLabel11" destination="KyN-X5-NhJ" id="gqS-jX-Pvz"/>
+                        <outlet property="sliderLabel12" destination="kK1-r0-282" id="Jqi-3Q-YcU"/>
+                        <outlet property="sliderLabel13" destination="4bF-bY-Uix" id="vCg-YE-a88"/>
+                        <outlet property="sliderLabel14" destination="zmB-F0-FgC" id="VZm-LF-81U"/>
+                        <outlet property="sliderLabel15" destination="D2U-om-vYa" id="9kR-dX-ETL"/>
+                        <outlet property="sliderLabel16" destination="26o-ug-aIA" id="xSA-TZ-QsC"/>
+                        <outlet property="sliderLabel2" destination="3Zx-08-jHt" id="65V-Q0-TYg"/>
+                        <outlet property="sliderLabel3" destination="OLH-k6-q5J" id="8lm-bB-tKo"/>
+                        <outlet property="sliderLabel4" destination="Sbq-Wk-ys4" id="NBz-fp-Zmd"/>
+                        <outlet property="sliderLabel5" destination="5Rx-qC-Nu4" id="v2k-Hi-rzS"/>
+                        <outlet property="sliderLabel6" destination="xWq-VY-7fc" id="Ssl-yy-ITT"/>
+                        <outlet property="sliderLabel7" destination="Mc0-uw-dlu" id="oLn-9J-eng"/>
+                        <outlet property="sliderLabel8" destination="zqJ-cC-F60" id="zfX-y5-6lN"/>
+                        <outlet property="sliderLabel9" destination="q8M-rY-BMz" id="L8g-Wc-EnF"/>
+                        <outlet property="verticalSlider1" destination="5Xg-ld-Am3" id="KdG-a4-V2k"/>
+                        <outlet property="verticalSlider10" destination="oBl-mA-QGe" id="hpw-lg-KVA"/>
+                        <outlet property="verticalSlider11" destination="AtO-Z6-W1y" id="ThA-U1-ffH"/>
+                        <outlet property="verticalSlider12" destination="v8d-r4-pxd" id="BgC-yK-52Z"/>
+                        <outlet property="verticalSlider13" destination="qmG-c9-PTY" id="d1g-vD-0a0"/>
+                        <outlet property="verticalSlider14" destination="fnX-Tf-fzI" id="bwL-Da-SQO"/>
+                        <outlet property="verticalSlider15" destination="Kqw-U0-4sw" id="lht-8d-ITM"/>
+                        <outlet property="verticalSlider16" destination="88D-6c-fdq" id="9kF-cX-bOp"/>
+                        <outlet property="verticalSlider2" destination="en9-MW-kya" id="pbd-k0-H9d"/>
+                        <outlet property="verticalSlider3" destination="Rjp-n5-qtq" id="85Y-VL-vbZ"/>
+                        <outlet property="verticalSlider4" destination="Dgm-JE-nyU" id="7Ly-LM-ffS"/>
+                        <outlet property="verticalSlider5" destination="IOZ-c7-yC7" id="2y2-Go-XyD"/>
+                        <outlet property="verticalSlider6" destination="id1-SH-Na0" id="G3E-Bc-aO5"/>
+                        <outlet property="verticalSlider7" destination="NWu-mK-kGf" id="t8X-N1-5vU"/>
+                        <outlet property="verticalSlider8" destination="eha-sC-uxK" id="ZOA-9T-m2Q"/>
+                        <outlet property="verticalSlider9" destination="vU6-P2-BTi" id="Yvb-0c-kpP"/>
+                    </connections>
+                </viewController>
+                <customObject id="JTn-K9-EXX" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="429"/>
+        </scene>
+        <!--Light Curve Utility-->
+        <scene sceneID="0Oa-0S-Doh">
+            <objects>
+                <viewController title="Light Curve Utility" id="TY1-la-yGm" sceneMemberID="viewController">
+                    <view key="view" id="ArR-yw-UZf">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TeI-uX-7ng">
+                                <rect key="frame" x="219" y="141" width="12" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="2" id="9Vc-fW-95D">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TeI-uX-7ng" firstAttribute="centerX" secondItem="ArR-yw-UZf" secondAttribute="centerX" id="0eU-Td-iIJ"/>
+                            <constraint firstItem="TeI-uX-7ng" firstAttribute="centerY" secondItem="ArR-yw-UZf" secondAttribute="centerY" id="paJ-XY-k5C"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="RTK-oS-87I" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="606" y="927"/>
         </scene>
     </scenes>
 </document>

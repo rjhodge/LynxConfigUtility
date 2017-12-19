@@ -10,8 +10,7 @@
 		35B61BBE1FE0915B00870CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B61BBD1FE0915B00870CF6 /* Assets.xcassets */; };
 		35B61BC11FE0916600870CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B61BC01FE0916500870CF6 /* Main.storyboard */; };
 		35B61BC71FE091C800870CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B61BC41FE091C800870CF6 /* AppDelegate.swift */; };
-		35B61BC81FE091C800870CF6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35B61BC61FE091C800870CF6 /* Info.plist */; };
-		35C3E6D31FE08A4500EE4474 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C3E6D21FE08A4500EE4474 /* ViewController.swift */; };
+		35FCA6161FE18B0300AFA24A /* DMXDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FCA6151FE18B0300AFA24A /* DMXDeckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +19,8 @@
 		35B61BC41FE091C800870CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35B61BC51FE091C800870CF6 /* LynxConfigUtility.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = LynxConfigUtility.entitlements; sourceTree = "<group>"; };
 		35B61BC61FE091C800870CF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35C3E6CD1FE08A4500EE4474 /* LynxConfigUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LynxConfigUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35C3E6D21FE08A4500EE4474 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35C3E6CD1FE08A4500EE4474 /* Lynx Config Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lynx Config Utility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FCA6151FE18B0300AFA24A /* DMXDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMXDeckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +71,7 @@
 		35C3E6CE1FE08A4500EE4474 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35C3E6CD1FE08A4500EE4474 /* LynxConfigUtility.app */,
+				35C3E6CD1FE08A4500EE4474 /* Lynx Config Utility.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,10 +81,18 @@
 			children = (
 				35B61BC31FE091C800870CF6 /* AppInfo */,
 				35B61BBC1FE0915B00870CF6 /* Assets */,
+				35FCA6141FE18AD600AFA24A /* DMXDeck */,
 				35B61BBF1FE0916500870CF6 /* Storyboards */,
-				35C3E6D21FE08A4500EE4474 /* ViewController.swift */,
 			);
 			path = LynxConfigUtility;
+			sourceTree = "<group>";
+		};
+		35FCA6141FE18AD600AFA24A /* DMXDeck */ = {
+			isa = PBXGroup;
+			children = (
+				35FCA6151FE18B0300AFA24A /* DMXDeckViewController.swift */,
+			);
+			path = DMXDeck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +112,7 @@
 			);
 			name = LynxConfigUtility;
 			productName = LynxConfigUtility;
-			productReference = 35C3E6CD1FE08A4500EE4474 /* LynxConfigUtility.app */;
+			productReference = 35C3E6CD1FE08A4500EE4474 /* Lynx Config Utility.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +156,6 @@
 			files = (
 				35B61BBE1FE0915B00870CF6 /* Assets.xcassets in Resources */,
 				35B61BC11FE0916600870CF6 /* Main.storyboard in Resources */,
-				35B61BC81FE091C800870CF6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FCA6161FE18B0300AFA24A /* DMXDeckViewController.swift in Sources */,
 				35B61BC71FE091C800870CF6 /* AppDelegate.swift in Sources */,
-				35C3E6D31FE08A4500EE4474 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +290,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/LynxConfigUtility/AppInfo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtility;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lynx Config Utility";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -299,7 +305,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/LynxConfigUtility/AppInfo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.binaryplatypussoftware.LynxConfigUtility;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Lynx Config Utility";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
