@@ -311,17 +311,17 @@ class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDat
     func sendDMX() {
         var output: [String] = []
         let length: Int = 512
-        let lsb: Int = (length + 1) & 0xFF
-        let msb: Int = ((length + 1) >> 8) & 0xff
-        output.append("7E")              // Start of Message
-        output.append("06")              // DMX Send
-        output.append(lsb.toHexString())     // Length LSB
-        output.append(msb.toHexString())     // Length MSB
-        output.append("00")              // DMX Start
-        for _ in 1 ... length {          // DMX Packet
+        let lsb: Int = (length + 1) & 0xFF         // Increase length by one for DMX Start
+        let msb: Int = ((length + 1) >> 8) & 0xff  // Increase length by one for DMX Start
+        output.append("7E")                        // Start of Message
+        output.append("06")                        // DMX Send
+        output.append(lsb.toHexString())           // Length LSB
+        output.append(msb.toHexString())           // Length MSB
+        output.append("00")                        // DMX Start
+        for _ in 1 ... length {                    // DMX Packet
             output.append("00")
         }
-        output.append("E7")              // End of Message
+        output.append("E7")                        // End of Message
         for i in  1...16 {
             guard let combo = self.value(forKey: "sliderCombo\(i)") as? NSComboBox,
                 let slider = self.value(forKey: "verticalSlider\(i)") as? NSSlider else {
