@@ -218,6 +218,7 @@ class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDat
                 port.baudRate = 250000
                 port.parity = .none
                 port.numberOfStopBits = 1
+                port.open()
                 timer = Timer.scheduledTimer(withTimeInterval: 0.050, repeats: true, block: { (timer) in
                     self.sendDMX()
                 })
@@ -314,8 +315,8 @@ class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDat
         let msb: Int = ((length + 1) >> 8) & 0xff
         output.append("7E")              // Start of Message
         output.append("06")              // DMX Send
-        output.append(intToHex(lsb))     // Length LSB
-        output.append(intToHex(msb))     // Length MSB
+        output.append(lsb.toHexString())     // Length LSB
+        output.append(msb.toHexString())     // Length MSB
         output.append("00")              // DMX Start
         for _ in 1 ... length {          // DMX Packet
             output.append("00")
@@ -328,36 +329,19 @@ class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDat
             }
             if combo.indexOfSelectedItem != 0 {
                 let channel = combo.indexOfSelectedItem + 4
-                let intensity: String = intToHex(slider.integerValue)
+                let intensity: String = slider.integerValue.toHexString()
                 output[channel] = intensity
             }
         }
         let outputString: String = output.joined(separator: "")
-        let outputData: Data = dataWithHexString(hex: outputString)
+        let outputData: Data = outputString.dataWithHexString()
         guard let port = serialPort else {
             return
         }
-        port.open()
-        port.send(outputData)
-        port.close()
-    }
-
-    func intToHex(_ int: Int, bytes: Int = 2) -> String {
-        return String(format:("%0\(bytes)X"), int)
-    }
-
-    func dataWithHexString(hex: String) -> Data {
-        var hex = hex
-        var data = Data()
-        while(hex.count > 0) {
-            let c: String = hex.substring(to: hex.index(hex.startIndex, offsetBy: 2))
-            hex = hex.substring(from: hex.index(hex.startIndex, offsetBy: 2))
-            var ch: UInt32 = 0
-            Scanner(string: c).scanHexInt32(&ch)
-            var char = UInt8(ch)
-            data.append(&char, count: 1)
+        if !port.isOpen {
+            port.open()
         }
-        return data
+        port.send(outputData)
     }
 
     // MARK: ORSSerialPortDelegate

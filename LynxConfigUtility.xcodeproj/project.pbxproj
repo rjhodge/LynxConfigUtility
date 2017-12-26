@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35444F031FF2D03400594F06 /* Int+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35444F021FF2D03400594F06 /* Int+Utilities.swift */; };
+		35444F051FF2D04800594F06 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35444F041FF2D04800594F06 /* String+Utilities.swift */; };
+		35444F071FF2D06000594F06 /* Data+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35444F061FF2D06000594F06 /* Data+Utilities.swift */; };
 		35B2E4911FF198C30055C23C /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B2E4901FF198C30055C23C /* ORSSerial.framework */; };
 		35B2E4991FF1A0640055C23C /* USBSerialDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B2E4981FF1A0640055C23C /* USBSerialDevices.swift */; };
 		35B61BBE1FE0915B00870CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B61BBD1FE0915B00870CF6 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		3531888E1FF1DB5F00D084CA /* Lynx Config Utility.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lynx Config Utility.entitlements"; sourceTree = "<group>"; };
+		35444F021FF2D03400594F06 /* Int+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Utilities.swift"; sourceTree = "<group>"; };
+		35444F041FF2D04800594F06 /* String+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
+		35444F061FF2D06000594F06 /* Data+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Utilities.swift"; sourceTree = "<group>"; };
 		35B2E4901FF198C30055C23C /* ORSSerial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ORSSerial.framework; path = Carthage/Build/Mac/ORSSerial.framework; sourceTree = SOURCE_ROOT; };
 		35B2E4981FF1A0640055C23C /* USBSerialDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBSerialDevices.swift; sourceTree = "<group>"; };
 		35B61BBD1FE0915B00870CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35444F011FF2CFF900594F06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35444F061FF2D06000594F06 /* Data+Utilities.swift */,
+				35444F021FF2D03400594F06 /* Int+Utilities.swift */,
+				35444F041FF2D04800594F06 /* String+Utilities.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		35B2E48F1FF1989B0055C23C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +119,7 @@
 				35B61BC31FE091C800870CF6 /* AppInfo */,
 				35B61BBC1FE0915B00870CF6 /* Assets */,
 				35FCA6141FE18AD600AFA24A /* DMXDeck */,
+				35444F011FF2CFF900594F06 /* Extensions */,
 				35B2E48F1FF1989B0055C23C /* Frameworks */,
 				35B61BBF1FE0916500870CF6 /* Storyboards */,
 				35B2E4931FF19FF90055C23C /* USBSerial */,
@@ -208,9 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35444F051FF2D04800594F06 /* String+Utilities.swift in Sources */,
 				35B2E4991FF1A0640055C23C /* USBSerialDevices.swift in Sources */,
+				35444F071FF2D06000594F06 /* Data+Utilities.swift in Sources */,
 				35FCA6161FE18B0300AFA24A /* DMXDeckViewController.swift in Sources */,
 				35B61BC71FE091C800870CF6 /* AppDelegate.swift in Sources */,
+				35444F031FF2D03400594F06 /* Int+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
