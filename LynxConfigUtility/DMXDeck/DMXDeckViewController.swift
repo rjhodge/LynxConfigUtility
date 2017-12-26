@@ -7,8 +7,9 @@
 //
 
 import Cocoa
+import ORSSerial
 
-class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDataSource {
+class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDataSource, ORSSerialPortDelegate {
 
     @IBOutlet weak var sliderCombo1: NSComboBox!
     @IBOutlet weak var sliderCombo2: NSComboBox!
@@ -80,8 +81,13 @@ class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDat
 
     @IBOutlet weak var sequentialChannelsButton: NSButton!
     @IBOutlet weak var linkAllChannelsButton: NSButton!
+    @IBOutlet weak var isBroadcastingButton: NSButton!
+    @IBOutlet weak var comPortComboBox: NSComboBox!
 
     var dataSource: [String] = ["Off"]
+    var comPortDataSource: [String] = USBSerialDevices.getDevices()
+    var serialPort: ORSSerialPort?
+    var timer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -121,18 +127,34 @@ class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDat
 
     // MARK: - NSComboBox Datasource Methods
     func comboBox(_ comboBox: NSComboBox, objectValueForItemAt index: Int) -> Any? {
-        return dataSource[index]
+        if comboBox == comPortComboBox {
+            return comPortDataSource[index]
+        } else {
+            return dataSource[index]
+        }
     }
 
     func numberOfItems(in comboBox: NSComboBox) -> Int {
-        return dataSource.count
+        if comboBox == comPortComboBox {
+            return comPortDataSource.count
+        } else {
+            return dataSource.count
+        }
     }
 
     func comboBox(_ comboBox: NSComboBox, indexOfItemWithStringValue string: String) -> Int {
-        if let index = dataSource.index(of: string) {
-            return index
+        if comboBox == comPortComboBox {
+            if let index = comPortDataSource.index(of: string) {
+                return index
+            } else {
+                return 0
+            }
         } else {
-            return 0
+            if let index = dataSource.index(of: string) {
+                return index
+            } else {
+                return 0
+            }
         }
     }
 
@@ -182,6 +204,34 @@ class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDat
                 continue
             }
             b.state = sender.state
+        }
+    }
+
+    @IBAction func isBroadcastingButtonClick(_ sender: NSButton) {
+        if sender.state == .on {
+            sender.title = "Stop Broadcasting"
+            let comPort: String = comPortComboBox.stringValue
+            serialPort = ORSSerialPort(path: comPort)
+            if let port = serialPort {
+                port.delegate = self
+                port.allowsNonStandardBaudRates = true
+                port.baudRate = 250000
+                port.parity = .none
+                port.numberOfStopBits = 1
+                timer = Timer.scheduledTimer(withTimeInterval: 0.050, repeats: true, block: { (timer) in
+                    self.sendDMX()
+                })
+            }
+        } else {
+            sender.title = "Start Broadcasting"
+            if let port = serialPort {
+                port.close()
+                serialPort = nil
+            }
+            if let timer = timer {
+                timer.invalidate()
+                self.timer = nil
+            }
         }
     }
 
@@ -255,4 +305,72 @@ class DMXDeckViewController: NSViewController, NSComboBoxDelegate, NSComboBoxDat
             }
         }
     }
+
+    // MARK: - Send DMX
+    func sendDMX() {
+        var output: [String] = []
+        let length: Int = 512
+        let lsb: Int = (length + 1) & 0xFF
+        let msb: Int = ((length + 1) >> 8) & 0xff
+        output.append("7E")              // Start of Message
+        output.append("06")              // DMX Send
+        output.append(intToHex(lsb))     // Length LSB
+        output.append(intToHex(msb))     // Length MSB
+        output.append("00")              // DMX Start
+        for _ in 1 ... length {          // DMX Packet
+            output.append("00")
+        }
+        output.append("E7")              // End of Message
+        for i in  1...16 {
+            guard let combo = self.value(forKey: "sliderCombo\(i)") as? NSComboBox,
+                let slider = self.value(forKey: "verticalSlider\(i)") as? NSSlider else {
+                    continue
+            }
+            if combo.indexOfSelectedItem != 0 {
+                let channel = combo.indexOfSelectedItem + 4
+                let intensity: String = intToHex(slider.integerValue)
+                output[channel] = intensity
+            }
+        }
+        let outputString: String = output.joined(separator: "")
+        let outputData: Data = dataWithHexString(hex: outputString)
+        guard let port = serialPort else {
+            return
+        }
+        port.open()
+        port.send(outputData)
+        port.close()
+    }
+
+    func intToHex(_ int: Int, bytes: Int = 2) -> String {
+        return String(format:("%0\(bytes)X"), int)
+    }
+
+    func dataWithHexString(hex: String) -> Data {
+        var hex = hex
+        var data = Data()
+        while(hex.count > 0) {
+            let c: String = hex.substring(to: hex.index(hex.startIndex, offsetBy: 2))
+            hex = hex.substring(from: hex.index(hex.startIndex, offsetBy: 2))
+            var ch: UInt32 = 0
+            Scanner(string: c).scanHexInt32(&ch)
+            var char = UInt8(ch)
+            data.append(&char, count: 1)
+        }
+        return data
+    }
+
+    // MARK: ORSSerialPortDelegate
+    func serialPortWasRemoved(fromSystem serialPort: ORSSerialPort) {
+        self.serialPort = nil
+    }
+
+    func serialPort(_ serialPort: ORSSerialPort, didEncounterError error: Error) {
+        print(error)
+    }
+
+    func serialPort(_ serialPort: ORSSerialPort, requestDidTimeout request: ORSSerialRequest) {
+        print("timeout")
+    }
+
 }

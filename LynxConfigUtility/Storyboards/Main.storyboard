@@ -382,7 +382,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="LynxConfigUtility" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Lynx_Config_Utility" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -487,6 +487,35 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="linkAllChannelsButtonClick:" target="PLA-fe-zKL" id="s3T-vJ-36h"/>
+                                </connections>
+                            </button>
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eKh-et-rDr" userLabel="comPortComboBox">
+                                <rect key="frame" x="510" y="271" width="303" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="NRt-U8-YSv"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Com Port" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="ru1-un-hbi">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </comboBoxCell>
+                                <connections>
+                                    <outlet property="dataSource" destination="PLA-fe-zKL" id="Hts-cC-oIZ"/>
+                                    <outlet property="delegate" destination="PLA-fe-zKL" id="6K8-N0-Sah"/>
+                                </connections>
+                            </comboBox>
+                            <button verticalHuggingPriority="750" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LmB-YI-pKZ" userLabel="isBroadcastingButton">
+                                <rect key="frame" x="819" y="268" width="162" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Fxn-kI-E0H"/>
+                                    <constraint firstAttribute="height" constant="21" id="hO1-xT-vwr"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Start Broadcasting" alternateTitle="Stop Broadcasting" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WFO-LV-tHq">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="isBroadcastingButtonClick:" target="PLA-fe-zKL" id="7EN-kb-4wn"/>
                                 </connections>
                             </button>
                             <stackView distribution="equalSpacing" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="cPM-w6-ra6" userLabel="containerStackView">
@@ -1538,15 +1567,28 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="awE-Fl-izx">
+                                <rect key="frame" x="440" y="277" width="62" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Com Port" id="c8G-NM-F4H">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="0ei-5W-jtq" firstAttribute="centerX" secondItem="gPc-Gd-YNx" secondAttribute="centerX" id="5WJ-CF-HoI"/>
                             <constraint firstItem="ZiW-rv-oZL" firstAttribute="top" secondItem="jFv-No-LxN" secondAttribute="bottom" constant="10" id="8Ex-Ki-s9N"/>
                             <constraint firstItem="jFv-No-LxN" firstAttribute="top" secondItem="Cz9-4p-jqS" secondAttribute="bottom" constant="10" id="APe-Gv-MF5"/>
+                            <constraint firstItem="eKh-et-rDr" firstAttribute="leading" secondItem="awE-Fl-izx" secondAttribute="trailing" constant="10" id="AmN-9h-quG"/>
+                            <constraint firstItem="eKh-et-rDr" firstAttribute="top" secondItem="LmB-YI-pKZ" secondAttribute="top" id="Dj8-Za-kL4"/>
+                            <constraint firstItem="awE-Fl-izx" firstAttribute="centerY" secondItem="LmB-YI-pKZ" secondAttribute="centerY" id="EiR-JN-qxz"/>
                             <constraint firstAttribute="bottom" secondItem="cPM-w6-ra6" secondAttribute="bottom" constant="15" id="Gbk-sB-2LH"/>
                             <constraint firstItem="evT-Gu-bei" firstAttribute="top" secondItem="ZiW-rv-oZL" secondAttribute="top" id="MkD-yy-fut"/>
                             <constraint firstItem="ZiW-rv-oZL" firstAttribute="leading" secondItem="gPc-Gd-YNx" secondAttribute="leading" constant="15" id="T95-lX-4vv"/>
                             <constraint firstItem="cPM-w6-ra6" firstAttribute="top" secondItem="ZiW-rv-oZL" secondAttribute="bottom" constant="15" id="TFh-3T-6ZR"/>
+                            <constraint firstAttribute="trailing" secondItem="LmB-YI-pKZ" secondAttribute="trailing" constant="15" id="Vtv-DP-CTT"/>
+                            <constraint firstItem="LmB-YI-pKZ" firstAttribute="centerY" secondItem="ZiW-rv-oZL" secondAttribute="centerY" id="Wqa-qB-hUn"/>
                             <constraint firstItem="evT-Gu-bei" firstAttribute="leading" secondItem="ZiW-rv-oZL" secondAttribute="trailing" constant="15" id="XhS-Xq-nY5"/>
                             <constraint firstItem="Cz9-4p-jqS" firstAttribute="top" secondItem="0ei-5W-jtq" secondAttribute="bottom" constant="5" id="Z2L-jm-iol"/>
                             <constraint firstItem="0ei-5W-jtq" firstAttribute="top" secondItem="gPc-Gd-YNx" secondAttribute="top" constant="15" id="ZSh-nS-WGK"/>
@@ -1554,10 +1596,14 @@
                             <constraint firstItem="jFv-No-LxN" firstAttribute="leading" secondItem="gPc-Gd-YNx" secondAttribute="leading" constant="15" id="ebi-k7-54b"/>
                             <constraint firstItem="Cz9-4p-jqS" firstAttribute="centerX" secondItem="gPc-Gd-YNx" secondAttribute="centerX" id="er0-qY-P40"/>
                             <constraint firstItem="cPM-w6-ra6" firstAttribute="leading" secondItem="gPc-Gd-YNx" secondAttribute="leading" constant="15" id="g88-aB-ExZ"/>
+                            <constraint firstItem="eKh-et-rDr" firstAttribute="bottom" secondItem="LmB-YI-pKZ" secondAttribute="bottom" id="jcw-ZQ-ibG"/>
                             <constraint firstItem="evT-Gu-bei" firstAttribute="bottom" secondItem="ZiW-rv-oZL" secondAttribute="bottom" id="mju-Yk-ZyA"/>
+                            <constraint firstItem="LmB-YI-pKZ" firstAttribute="leading" secondItem="eKh-et-rDr" secondAttribute="trailing" constant="15" id="w4Y-AG-z6Y"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="comPortComboBox" destination="eKh-et-rDr" id="ufC-JA-SbJ"/>
+                        <outlet property="isBroadcastingButton" destination="LmB-YI-pKZ" id="i6g-Tp-iph"/>
                         <outlet property="linkAllChannelsButton" destination="evT-Gu-bei" id="TFP-Sd-gvZ"/>
                         <outlet property="linkCheckBox1" destination="BZa-cG-zbh" id="jHl-zG-9vz"/>
                         <outlet property="linkCheckBox10" destination="bJl-A0-wiX" id="9OM-vz-ajd"/>
